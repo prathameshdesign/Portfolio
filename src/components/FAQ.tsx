@@ -32,12 +32,12 @@ const FAQ = () => {
 
   return (
     <section className="py-20 bg-gray-800">
-      <div className="max-w-4xl mx-auto px-6">
+      <div className="max-w-4xl mx-auto px-4 sm:px-6">
         <div className="text-center mb-16">
-          <h2 className="text-4xl lg:text-5xl font-bold text-white mb-6">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-6">
             Frequently Asked Questions
           </h2>
-          <p className="text-gray-300 text-lg">
+          <p className="text-gray-300 text-base sm:text-lg">
             Got questions? I've got answers. Here's what most people want to know.
           </p>
         </div>
@@ -46,12 +46,12 @@ const FAQ = () => {
           {faqs.map((faq, index) => (
             <div key={index} className="bg-gray-900 border border-gray-700 rounded-xl overflow-hidden">
               <button
-                className="w-full px-6 py-4 text-left flex items-center justify-between hover:bg-gray-800 transition-colors"
+                className="w-full px-4 sm:px-6 py-4 text-left flex items-center justify-between hover:bg-gray-800 transition-colors"
                 onClick={() => setOpenIndex(openIndex === index ? -1 : index)}
               >
-                <h3 className="text-lg font-semibold text-white">{faq.question}</h3>
+                <h3 className="text-base sm:text-lg font-semibold text-white pr-4">{faq.question}</h3>
                 <svg 
-                  className={`w-5 h-5 text-teal-400 transition-transform ${openIndex === index ? 'rotate-180' : ''}`}
+                  className={`w-5 h-5 text-teal-400 transition-transform flex-shrink-0 ${openIndex === index ? 'rotate-180' : ''}`}
                   fill="none" 
                   stroke="currentColor" 
                   viewBox="0 0 24 24"
@@ -60,7 +60,7 @@ const FAQ = () => {
                 </svg>
               </button>
               {openIndex === index && (
-                <div className="px-6 pb-4">
+                <div className="px-4 sm:px-6 pb-4">
                   <p className="text-gray-300 leading-relaxed">{faq.answer}</p>
                 </div>
               )}

@@ -10,6 +10,12 @@
   box-sizing: border-box;
 }
 
+/* Prevent horizontal overflow */
+html, body {
+  overflow-x: hidden;
+  width: 100%;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -19,6 +25,19 @@ body {
   line-height: 1.6;
   color: #ffffff;
   background-color: #111827;
+  width: 100%;
+  max-width: 100vw;
+}
+
+/* Ensure all containers respect viewport width */
+* {
+  max-width: 100%;
+}
+
+/* Fix for any potential overflow issues */
+.container, section, div {
+  word-wrap: break-word;
+  overflow-wrap: break-word;
 }
 
 /* Custom scrollbar */
@@ -110,8 +129,14 @@ textarea:focus {
 /* Responsive text sizes */
 @media (max-width: 640px) {
   .text-responsive-xl {
-    font-size: 2.5rem;
+    font-size: 2rem;
     line-height: 1.2;
+  }
+  
+  /* Ensure mobile spacing */
+  section {
+    padding-left: 1rem;
+    padding-right: 1rem;
   }
 }
 
@@ -126,5 +151,25 @@ textarea:focus {
   .text-responsive-xl {
     font-size: 4rem;
     line-height: 1.1;
+  }
+}
+
+/* Mobile-specific fixes */
+@media (max-width: 768px) {
+  /* Prevent text from causing horizontal scroll */
+  h1, h2, h3, h4, h5, h6 {
+    word-break: break-word;
+    hyphens: auto;
+  }
+  
+  /* Ensure buttons don't overflow */
+  button, .btn-primary, .btn-secondary {
+    min-width: 0;
+    white-space: nowrap;
+  }
+  
+  /* Fix for flex items on mobile */
+  .flex {
+    flex-wrap: wrap;
   }
 }

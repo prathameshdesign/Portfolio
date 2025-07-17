@@ -3,18 +3,18 @@ import React from 'react';
 const About = () => {
   return (
     <section id="about" className="py-20 bg-gray-800">
-      <div className="max-w-7xl mx-auto px-6">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           {/* Left Content */}
           <div className="space-y-8">
             <div className="space-y-4">
-              <h2 className="text-4xl lg:text-5xl font-bold text-white">
+              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white">
                 Who am I?
               </h2>
               <div className="w-20 h-1 bg-teal-400"></div>
             </div>
 
-            <div className="space-y-6 text-gray-300 text-lg leading-relaxed">
+            <div className="space-y-6 text-gray-300 text-base sm:text-lg leading-relaxed">
               <p>
                 I'm a web designer who helps SaaS & startup founders turn bland websites into trust-building, investor-friendly sites that clearly explain what they do so they close more deals and save hours on demos.
               </p>
@@ -23,7 +23,7 @@ const About = () => {
               </p>
             </div>
 
-            <div className="grid grid-cols-2 gap-6 pt-8">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 pt-8">
               <div className="bg-gray-900 p-6 rounded-xl border border-gray-700">
                 <div className="w-12 h-12 bg-teal-400/20 rounded-lg flex items-center justify-center mb-4">
                   <svg className="w-6 h-6 text-teal-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -69,7 +69,7 @@ const About = () => {
           {/* Right Content - Profile Image */}
           <div className="flex justify-center">
             <div className="relative">
-              <div className="w-96 h-96 rounded-full overflow-hidden border-4 border-teal-400/30">
+              <div className="w-72 sm:w-96 h-72 sm:h-96 rounded-full overflow-hidden border-4 border-teal-400/30">
                 <img 
                   src="https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&w=600" 
                   alt="Prathamesh working" 

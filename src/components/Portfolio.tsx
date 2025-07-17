@@ -6,28 +6,28 @@ const Portfolio = () => {
       title: "Launchwise",
       subtitle: "Investor Updates Made Simple",
       description: "Designed a clean platform for startups to share investor updates. Focused on credibility, easy reading, and a layout that guides people to the right info.",
-      image: "/src/assets/files_5451801-1752423826047-image.png",
+      image: "https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=800",
       tags: ["Platform", "SaaS"]
     },
     {
       title: "BugRadar",
       subtitle: "Bug Reports That Actually Make Sense",
       description: "Built a dev-focused bug reporting tool that's clear, tidy, and on-brand. Helps teams track issues without the usual clutter.",
-      image: "/src/assets/files_5451801-1752423833940-image.png",
+      image: "https://images.pexels.com/photos/574071/pexels-photo-574071.jpeg?auto=compress&cs=tinysrgb&w=800",
       tags: ["Tool", "Developer"]
     }
   ];
 
   return (
     <section id="projects" className="py-20 bg-gray-800">
-      <div className="max-w-7xl mx-auto px-6">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6">
         <div className="mb-16">
-          <h2 className="text-4xl lg:text-5xl font-bold text-white mb-6">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-6">
             Some work I've done
           </h2>
         </div>
 
-        <div className="grid lg:grid-cols-2 gap-8">
+        <div className="grid md:grid-cols-2 gap-8">
           {projects.map((project, index) => (
             <div key={index} className="group cursor-pointer">
               <div className="bg-gray-900 border border-gray-700 rounded-2xl overflow-hidden hover:border-teal-400/50 transition-all duration-300 hover:transform hover:-translate-y-2">
@@ -62,7 +62,7 @@ const Portfolio = () => {
                   <p className="text-gray-400 text-sm leading-relaxed">
                     {project.description}
                   </p>
-                  <div className="flex gap-3 mt-4">
+                  <div className="flex flex-col sm:flex-row gap-3 mt-4">
                     <a 
                       href="#" 
                       className="bg-teal-400 hover:bg-teal-300 text-gray-900 px-4 py-2 rounded-lg text-sm font-medium transition-colors"

@@ -3,7 +3,7 @@ import React from 'react';
 const Footer = () => {
   return (
     <footer className="bg-gray-900 border-t border-gray-800 py-12">
-      <div className="max-w-7xl mx-auto px-6">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6">
         <div className="grid md:grid-cols-3 gap-12 mb-12">
           {/* Brand */}
           <div className="space-y-4">
@@ -39,7 +39,7 @@ const Footer = () => {
           <div>
             <h3 className="text-white font-semibold mb-4">Get In Touch</h3>
             <div className="space-y-3">
-              <p className="text-gray-400 text-sm">workpratham907@gmail.com</p>
+              <p className="text-gray-400 text-sm break-all">workpratham907@gmail.com</p>
               <p className="text-gray-400 text-sm">Navi Mumbai, India</p>
               <div className="flex space-x-3 pt-2">
                 <a href="#" className="text-gray-400 hover:text-teal-400 transition-colors">
@@ -61,7 +61,7 @@ const Footer = () => {
         </div>
 
         <div className="border-t border-gray-800 pt-8">
-          <p className="text-gray-500 text-xs text-center">
+          <p className="text-gray-500 text-xs text-center break-words">
             © 2025 Prathamesh Design • Designed & built by me. <a href="#contact" className="text-teal-400 hover:text-teal-300 transition-colors">Hire me</a>
           </p>
         </div>
