@@ -20,12 +20,12 @@ const Header = () => {
             <a href="#about" className="text-gray-300 hover:text-teal-400 transition-colors">About</a>
             <a href="#projects" className="text-gray-300 hover:text-teal-400 transition-colors">Projects</a>
             <a href="#services" className="text-gray-300 hover:text-teal-400 transition-colors">Services</a>
-            <a href="#contact" className="text-gray-300 hover:text-teal-400 transition-colors">Contact</a>
+            <a href="#contact-form" className="text-gray-300 hover:text-teal-400 transition-colors">Contact</a>
           </div>
 
           <div className="lg:hidden">
             <a 
-              href="#contact" 
+              href="#contact-form" 
               className="bg-teal-400 hover:bg-teal-300 text-gray-900 px-4 py-2 rounded-lg font-semibold transition-colors text-sm"
             >
               Contact

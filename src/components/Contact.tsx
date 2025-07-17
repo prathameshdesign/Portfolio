@@ -50,7 +50,6 @@ const Contact = () => {
                   </svg>
                 </div>
                 <div className="min-w-0">
-                  <h3 className="text-white font-semibold">Your Email Address</h3>
                   <p className="text-gray-400 text-sm sm:text-base break-all">workpratham907@gmail.com</p>
                 </div>
               </div>
@@ -63,7 +62,6 @@ const Contact = () => {
                   </svg>
                 </div>
                 <div>
-                  <h3 className="text-white font-semibold">Location Here</h3>
                   <p className="text-gray-400">Navi Mumbai, India</p>
                 </div>
               </div>
