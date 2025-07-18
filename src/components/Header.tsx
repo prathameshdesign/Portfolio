@@ -26,13 +26,19 @@ const Header = () => {
           <div className="lg:hidden">
             <a 
               href="#contact-form" 
-              className="bg-teal-400 hover:bg-teal-300 text-gray-900 px-4 py-2 rounded-lg font-semibold transition-colors text-sm"
+              className="bg-teal-400 hover:bg-teal-300 text-gray-900 px-4 py-2 rounded-lg font-semibold transition-colors text-sm ml-4"
             >
               Contact
             </a>
           </div>
 
-          <div className="flex items-center space-x-4">
+          <div className="hidden lg:flex items-center space-x-4">
+            <a 
+              href="#contact-form" 
+              className="bg-teal-400 hover:bg-teal-300 text-gray-900 px-6 py-2 rounded-lg font-semibold transition-colors text-sm"
+            >
+              Contact
+            </a>
           </div>
         </nav>
       </div>
