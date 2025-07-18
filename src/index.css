@@ -64,7 +64,7 @@ html {
 }
 
 #contact-form {
-  scroll-margin-top: 150px;
+  scroll-margin-top: 0px;
 }
 
 /* Additional mobile-specific scroll adjustment */
