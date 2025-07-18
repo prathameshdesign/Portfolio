@@ -64,7 +64,7 @@ html {
 }
 
 #contact-form {
-  scroll-margin-top: 200px;
+  scroll-margin-top: 220px;
 }
 
 /* Additional mobile-specific scroll adjustment */
@@ -74,14 +74,14 @@ html {
   }
   
   #contact-form {
-    scroll-margin-top: 180px;
+    scroll-margin-top: 200px;
   }
 }
 
 /* Tablet-specific adjustments */
 @media (min-width: 769px) and (max-width: 1024px) {
   #contact-form {
-    scroll-margin-top: 190px;
+    scroll-margin-top: 210px;
   }
 }
 
