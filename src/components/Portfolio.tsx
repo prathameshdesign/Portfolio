@@ -6,12 +6,7 @@ const Portfolio = () => {
       title: "Launchwise",
       subtitle: "Investor Updates Made Simple",
       description: "Designed a clean platform for startups to share investor updates. Focused on credibility, easy reading, and a layout that guides people to the right info.",
-      image: 
-      <img 
-                  src="/src/assets/Launchwise_Dashboard.jpeg" 
-                  alt="Launchwise Dashboard" 
-                 
-            />
+      image: "https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=800",
       tags: ["Platform", "SaaS"]
     },
     {
