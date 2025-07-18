@@ -71,9 +71,10 @@ const About = () => {
             <div className="relative">
               <div className="w-72 sm:w-96 h-72 sm:h-96 rounded-full overflow-hidden border-4 border-teal-400/30">
                 <img 
-                  src="https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&w=600" 
+                  src="/src/assets/Profile_Image.jpeg" 
                   alt="Prathamesh working" 
-                  className="w-full h-full object-cover"
+                  className="w-full h-full object-cover object-center"
+                  style={{ objectPosition: 'center 20%' }}
                 />
               </div>
             </div>
