@@ -19,7 +19,6 @@ function App() {
       <Services />
       <Process />
       <FAQ />
-      <div id="contact-form"></div>
       <Contact />
       <Footer />
     </div>
