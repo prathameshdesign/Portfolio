@@ -6,14 +6,14 @@ const Portfolio = () => {
       title: "Launchwise",
       subtitle: "Investor Updates Made Simple",
       description: "Designed a clean platform for startups to share investor updates. Focused on credibility, easy reading, and a layout that guides people to the right info.",
-      image: "https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=800",
+      image: "src/assets/Launchwise_Dashboard.png",
       tags: ["Platform", "SaaS"]
     },
     {
       title: "BugRadar",
       subtitle: "Bug Reports That Actually Make Sense",
       description: "Built a dev-focused bug reporting tool that's clear, tidy, and on-brand. Helps teams track issues without the usual clutter.",
-      image: "https://images.pexels.com/photos/574071/pexels-photo-574071.jpeg?auto=compress&cs=tinysrgb&w=800",
+      image: "src/assets/BugRadar_Dashboard.png",
       tags: ["Tool", "Developer"]
     }
   ];
