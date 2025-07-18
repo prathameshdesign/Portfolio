@@ -21,7 +21,7 @@ const Hero = () => {
         </svg>
       </div>
 
-      <div className="max-w-7xl mx-auto py-12 sm:py-20 relative z-10">
+      <div className="max-w-7xl mx-auto py-16 sm:py-24 lg:py-32 relative z-10">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Left Content */}
           <div className="space-y-8">
