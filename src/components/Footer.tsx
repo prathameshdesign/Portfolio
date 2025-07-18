@@ -40,7 +40,7 @@ const Footer = () => {
             <h3 className="text-white font-semibold mb-4">Get In Touch</h3>
             <div className="space-y-3">
               <p className="text-gray-400 text-sm break-all">workpratham907@gmail.com</p>
-              <p className="text-gray-400 text-sm">Navi Mumbai, India</p>
+              <p className="text-gray-400 text-sm">Mumbai, India</p>
               <div className="flex space-x-3 pt-2">
                 <a href="https://linkedin.com" className="text-gray-400 hover:text-teal-400 transition-colors">
                   <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
