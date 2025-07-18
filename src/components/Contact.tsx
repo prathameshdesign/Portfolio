@@ -62,7 +62,7 @@ const Contact = () => {
                   </svg>
                 </div>
                 <div>
-                  <p className="text-gray-400">Navi Mumbai, India</p>
+                  <p className="text-gray-400">Mumbai, India</p>
                 </div>
               </div>
             </div>
@@ -93,14 +93,14 @@ const Contact = () => {
             <div className="mb-8">
               <h3 className="text-xl sm:text-2xl font-bold text-white mb-2">Get In Touch</h3>
               <p className="text-gray-400">
-                Ready to start your project? I usually reply within 24 hours. No sales pressure — just honest advice.
+                Ready to start your project? I usually reply within 24 hours. No sales pressure just honest advice.
               </p>
             </div>
 
             {isSubmitted ? (
               <div className="text-center py-12">
                 <div className="text-4xl mb-4">🚀</div>
-                <h3 className="text-lg sm:text-xl font-semibold text-white mb-2">Thanks! I'll be in touch soon 🚀</h3>
+                <h3 className="text-lg sm:text-xl font-semibold text-white mb-2">Thanks! I'll be in touch soon !</h3>
                 <p className="text-gray-400">Your message has been sent successfully.</p>
               </div>
             ) : (
