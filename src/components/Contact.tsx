@@ -157,7 +157,7 @@ const Contact = () => {
                 type="submit"
                 className="w-full bg-teal-400 hover:bg-teal-300 text-gray-900 py-3 sm:py-4 rounded-lg font-semibold transition-all duration-300 hover:shadow-[0_0_12px_#2dd4bf88] text-base sm:text-lg"
               >
-                Get in touch
+                Get in Touch
               </button>
             </form>
             )}
