@@ -110,6 +110,18 @@ const Contact = () => {
   data-netlify="true"
   onSubmit={handleSubmit}
   className="space-y-6"
+   <input type="hidden" name="form-name" value="contact" />
+
+  <div>
+    <label htmlFor="name" className="block text-sm font-medium text-gray-300 mb-2">
+      What's your name?
+    </label>
+    <input
+      type="text"
+      id="name"
+      name="name"
+    />
+  </div>
 >
               <div>
                 <label htmlFor="name" className="block text-sm font-medium text-gray-300 mb-2">
