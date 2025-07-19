@@ -22,7 +22,7 @@ const Hero = () => {
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 relative z-10 w-full">
         {/* FIX #1: Increased the gap between columns for more space */}
-        <div className="grid lg:grid-cols-2 gap-8 lg:gap-32 items-center">
+        <div className="grid lg:grid-cols-2 gap-8 lg:gap-35 items-center">
           {/* Left Content */}
           <div className="space-y-8">
             <div className="space-y-4">
