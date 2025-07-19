@@ -20,7 +20,6 @@ const Header = () => {
             <a href="#about" className="text-gray-300 hover:text-teal-400 transition-colors">About</a>
             <a href="#projects" className="text-gray-300 hover:text-teal-400 transition-colors">Projects</a>
             <a href="#services" className="text-gray-300 hover:text-teal-400 transition-colors">Services</a>
-            <a href="#contact-form" className="text-gray-300 hover:text-teal-400 transition-colors">Contact</a>
           </div>
 
           <div className="lg:hidden">
