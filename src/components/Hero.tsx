@@ -63,7 +63,7 @@ const Hero = () => {
           </div>
 
           {/* Right Content - Profile Image */}
-          <div className="flex justify-center lg:justify-center order-first lg:order-last">
+          <div className="flex justify-center lg:justify-center items-center order-first lg:order-last">
             <div className="relative">
               {/* Hexagonal background */}
               <div className="w-72 sm:w-80 lg:w-96 h-72 sm:h-80 lg:h-96 relative">
@@ -84,8 +84,8 @@ const Hero = () => {
                   <img 
                     src="src/assets/Profile_Photo_Hero_Section.jpeg" 
                     alt="Prathamesh" 
-                    className="w-full h-full object-cover object-center"
-                    style={{ objectPosition: 'center 20%' }}
+                    className="w-full h-full object-cover"
+                    style={{ objectPosition: 'center 15%' }}
                   />
                 </div>
               </div>
