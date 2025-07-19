@@ -85,7 +85,7 @@ const Hero = () => {
                     src="src/assets/Profile_Photo_Hero_Section.jpeg" 
                     alt="Prathamesh" 
                     className="w-full h-full object-cover object-center"
-                    style={{ objectPosition: 'center 20%' }}
+                    style={{ objectPosition: 'center 10%' }}
                   />
                 </div>
               </div>
