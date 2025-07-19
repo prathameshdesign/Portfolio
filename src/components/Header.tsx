@@ -58,59 +58,74 @@ const Header = () => {
 
         {/* Mobile side menu */}
         {isMobileMenuOpen && (
-          <div className="lg:hidden">
+          <div className="lg:hidden fixed inset-0 z-[9999]">
+            {/* Full-screen overlay background */}
             <div 
-              className="fixed inset-0 bg-black bg-opacity-50 z-40"
+              className="fixed inset-0 bg-gray-900/95 backdrop-blur-sm"
               onClick={() => setIsMobileMenuOpen(false)}
             ></div>
-            <div className="fixed top-0 left-0 h-full w-64 bg-gray-900 border-r border-gray-800 z-50 transform transition-transform duration-300">
-              <div className="p-6">
-                <div className="flex items-center justify-between mb-8">
-                  <div className="flex items-center space-x-3">
-                    <div className="w-8 h-8 bg-teal-400 rounded-lg flex items-center justify-center">
-                      <span className="text-gray-900 font-bold text-sm">P</span>
-                    </div>
-                    <span className="text-white font-semibold">Prathamesh Design</span>
-                  </div>
-                  <button
-                    onClick={() => setIsMobileMenuOpen(false)}
-                    className="text-gray-400 hover:text-white transition-colors"
-                  >
-                    <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
-                    </svg>
-                  </button>
+            
+            {/* Menu content */}
+            <div className="fixed inset-0 flex flex-col items-center justify-center z-[10000]">
+              {/* Close button */}
+              <button
+                onClick={() => setIsMobileMenuOpen(false)}
+                className="absolute top-6 right-6 text-gray-400 hover:text-white transition-colors p-2"
+              >
+                <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+                </svg>
+              </button>
+              
+              {/* Logo */}
+              <div className="flex items-center space-x-3 mb-12">
+                <div className="w-12 h-12 bg-teal-400 rounded-lg flex items-center justify-center">
+                  <span className="text-gray-900 font-bold text-lg">P</span>
                 </div>
-                <nav className="space-y-4">
-                  <a 
-                    href="#home" 
-                    className="block text-teal-400 hover:text-teal-300 transition-colors py-2 text-lg"
-                    onClick={() => setIsMobileMenuOpen(false)}
-                  >
-                    Home
-                  </a>
-                  <a 
-                    href="#about" 
-                    className="block text-gray-300 hover:text-teal-400 transition-colors py-2 text-lg"
-                    onClick={() => setIsMobileMenuOpen(false)}
-                  >
-                    About
-                  </a>
-                  <a 
-                    href="#projects" 
-                    className="block text-gray-300 hover:text-teal-400 transition-colors py-2 text-lg"
-                    onClick={() => setIsMobileMenuOpen(false)}
-                  >
-                    Work
-                  </a>
-                  <a 
-                    href="#contact" 
-                    className="block text-gray-300 hover:text-teal-400 transition-colors py-2 text-lg"
-                    onClick={() => setIsMobileMenuOpen(false)}
-                  >
-                    FAQ
-                  </a>
-                </nav>
+                <span className="text-white font-semibold text-2xl">Prathamesh Design</span>
+              </div>
+              
+              {/* Navigation links */}
+              <nav className="space-y-8 text-center">
+                <a 
+                  href="#home" 
+                  className="block text-teal-400 hover:text-teal-300 transition-colors text-2xl font-medium"
+                  onClick={() => setIsMobileMenuOpen(false)}
+                >
+                  Home
+                </a>
+                <a 
+                  href="#about" 
+                  className="block text-white hover:text-teal-400 transition-colors text-2xl font-medium"
+                  onClick={() => setIsMobileMenuOpen(false)}
+                >
+                  About
+                </a>
+                <a 
+                  href="#projects" 
+                  className="block text-white hover:text-teal-400 transition-colors text-2xl font-medium"
+                  onClick={() => setIsMobileMenuOpen(false)}
+                >
+                  Work
+                </a>
+                <a 
+                  href="#contact" 
+                  className="block text-white hover:text-teal-400 transition-colors text-2xl font-medium"
+                  onClick={() => setIsMobileMenuOpen(false)}
+                >
+                  FAQ
+                </a>
+              </nav>
+              
+              {/* Contact button */}
+              <div className="mt-12">
+                <a 
+                  href="#contact-form" 
+                  className="bg-teal-400 hover:bg-teal-300 text-gray-900 px-8 py-4 rounded-lg font-semibold transition-colors text-lg"
+                  onClick={() => setIsMobileMenuOpen(false)}
+                >
+                  Get In Touch
+                </a>
               </div>
             </div>
           </div>
