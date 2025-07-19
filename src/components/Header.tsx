@@ -63,7 +63,7 @@ const Header = () => {
                 <div className="flex items-center space-x-3">
                   <div className="w-8 h-8 bg-teal-400 rounded-lg flex items-center justify-center">
                     <span className="text-gray-900 font-bold text-sm">P</span>
-                  </div
+                  </div>
                 </div>
                 <button
                   onClick={(e) => {
