@@ -82,7 +82,7 @@ const Hero = () => {
                 </svg>
                 <div className="absolute inset-6 sm:inset-8 rounded-full overflow-hidden hover:scale-105 transition-transform duration-300">
                   <img 
-                    src="/src/assets/Profile_Image.jpeg" 
+                    src="src/assets/Profile_Photo_Hero_Section.jpeg" 
                     alt="Prathamesh" 
                     className="w-full h-full object-cover object-center"
                     style={{ objectPosition: 'center 20%' }}
