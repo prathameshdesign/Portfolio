@@ -2,7 +2,6 @@ import ProfilePhoto from '../assets/Profile_Photo_Hero_Section.jpeg';
 
 const Hero = () => {
   return (
-    // The main section now only handles background and vertical spacing
     <section id="home" className="min-h-screen bg-gray-900 relative overflow-hidden flex items-center pt-20">
       {/* Background shapes are unchanged */}
       <div className="absolute inset-0">
@@ -22,9 +21,9 @@ const Hero = () => {
         </svg>
       </div>
 
-      {/* This container now perfectly matches the one in your Header and other sections */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 relative z-10 w-full">
-        <div className="grid lg:grid-cols-2 gap-8 lg:gap-16 items-center">
+        {/* THIS IS THE LINE WITH THE FIX */}
+        <div className="grid lg:grid-cols-2 gap-8 lg:gap-24 items-center">
           {/* Left Content */}
           <div className="space-y-8 lg:pr-8">
             <div className="space-y-4">
