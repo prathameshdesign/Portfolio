@@ -1,4 +1,3 @@
-import ProfilePhoto from '../assets/Profile_Photo_Hero_Section.jpeg';
 
 const Portfolio = () => {
   const projects = [
