@@ -2,7 +2,8 @@ import ProfilePhoto from '../assets/Profile_Photo_Hero_Section.jpeg';
 
 const Hero = () => {
   return (
-    <section id="home" className="min-h-screen bg-gray-900 relative overflow-hidden pt-20 px-4 sm:px-6">
+    // 1. REMOVED px-4 sm:px-6 from this line
+    <section id="home" className="min-h-screen bg-gray-900 relative overflow-hidden pt-20">
       {/* Flowing background shapes */}
       <div className="absolute inset-0">
         <svg className="absolute top-0 left-0 w-full h-full" viewBox="0 0 1200 800" fill="none">
@@ -21,8 +22,8 @@ const Hero = () => {
         </svg>
       </div>
 
-      {/* THIS IS THE LINE WITH THE FIX */}
-      <div className="max-w-7xl mx-auto py-12 sm:py-20 lg:py-24 relative z-10">
+      {/* 2. ADDED px-4 sm:px-6 to this line */}
+      <div className="max-w-7xl mx-auto py-12 sm:py-20 lg:py-24 relative z-10 px-4 sm:px-6">
         <div className="grid lg:grid-cols-2 gap-8 lg:gap-16 items-center">
           {/* Left Content */}
           <div className="space-y-8 lg:pr-8">
