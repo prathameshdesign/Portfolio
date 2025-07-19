@@ -64,7 +64,7 @@ const Hero = () => {
           {/* Right Content - Profile Image */}
           <div className="flex justify-center lg:justify-center items-center">
             {/* THIS IS THE NEW WRAPPER DIV WITH THE FIX */}
-            <div className="relative lg:bottom-10 lg:right-60">
+            <div className="relative lg:bottom-10 lg:right-10">
               <div className="relative">
                 <div className="w-72 sm:w-80 lg:w-96 h-72 sm:h-80 lg:h-96 relative">
                   <svg className="absolute inset-0 w-full h-full" viewBox="0 0 200 200">
