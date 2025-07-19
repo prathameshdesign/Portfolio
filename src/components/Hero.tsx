@@ -22,6 +22,7 @@ const Hero = () => {
       </div>
 
       <div className="max-w-7xl mx-auto py-16 sm:py-24 lg:py-32 relative z-10">
+        {/* THIS IS THE LINE WITH THE FIX */}
         <div className="grid lg:grid-cols-2 gap-8 lg:gap-16 items-center">
           {/* Left Content */}
           <div className="space-y-8 lg:pr-8">
@@ -63,14 +64,14 @@ const Hero = () => {
           </div>
 
           {/* Right Content - Profile Image */}
-          <div className="flex justify-center lg:justify-center items-center order-last lg:order-last">
+          <div className="flex justify-center lg:justify-center items-center order-first lg:order-last">
             <div className="relative">
               {/* Hexagonal background */}
               <div className="w-72 sm:w-80 lg:w-96 h-72 sm:h-80 lg:h-96 relative">
                 <svg className="absolute inset-0 w-full h-full" viewBox="0 0 200 200">
-                  <polygon 
-                    points="100,10 170,50 170,130 100,170 30,130 30,50" 
-                    fill="url(#heroGradient)" 
+                  <polygon
+                    points="100,10 170,50 170,130 100,170 30,130 30,50"
+                    fill="url(#heroGradient)"
                     className="drop-shadow-2xl"
                   />
                   <defs>
@@ -81,9 +82,9 @@ const Hero = () => {
                   </defs>
                 </svg>
                 <div className="absolute inset-6 sm:inset-8 lg:inset-10 rounded-full overflow-hidden hover:scale-105 transition-transform duration-300">
-                  <img 
-                    src={ProfilePhoto} 
-                    alt="Prathamesh" 
+                  <img
+                    src={ProfilePhoto}
+                    alt="Prathamesh"
                     className="w-full h-full object-cover"
                     style={{ objectPosition: 'center 50%' }}
                   />
