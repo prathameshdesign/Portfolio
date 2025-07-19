@@ -22,9 +22,9 @@ const Hero = () => {
       </div>
 
       <div className="max-w-7xl mx-auto py-16 sm:py-24 lg:py-32 relative z-10">
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
+        <div className="grid lg:grid-cols-2 gap-8 lg:gap-16 items-center">
           {/* Left Content */}
-          <div className="space-y-8">
+          <div className="space-y-8 lg:pr-8">
             <div className="space-y-4">
               <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white leading-tight">
                 Hi, I'm Prathamesh
@@ -63,10 +63,10 @@ const Hero = () => {
           </div>
 
           {/* Right Content - Profile Image */}
-          <div className="flex justify-center lg:justify-end">
+          <div className="flex justify-center lg:justify-center order-first lg:order-last">
             <div className="relative">
               {/* Hexagonal background */}
-              <div className="w-64 sm:w-80 h-64 sm:h-80 relative">
+              <div className="w-72 sm:w-80 lg:w-96 h-72 sm:h-80 lg:h-96 relative">
                 <svg className="absolute inset-0 w-full h-full" viewBox="0 0 200 200">
                   <polygon 
                     points="100,10 170,50 170,130 100,170 30,130 30,50" 
@@ -80,7 +80,7 @@ const Hero = () => {
                     </linearGradient>
                   </defs>
                 </svg>
-                <div className="absolute inset-6 sm:inset-8 rounded-full overflow-hidden hover:scale-105 transition-transform duration-300">
+                <div className="absolute inset-6 sm:inset-8 lg:inset-10 rounded-full overflow-hidden hover:scale-105 transition-transform duration-300">
                   <img 
                     src="src/assets/Profile_Photo_Hero_Section.jpeg" 
                     alt="Prathamesh" 
