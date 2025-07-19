@@ -2,9 +2,9 @@ import ProfilePhoto from '../assets/Profile_Photo_Hero_Section.jpeg';
 
 const Hero = () => {
   return (
-    // 1. REMOVED px-4 sm:px-6 from this line
-    <section id="home" className="min-h-screen bg-gray-900 relative overflow-hidden pt-20">
-      {/* Flowing background shapes */}
+    // The main section now only handles background and vertical spacing
+    <section id="home" className="min-h-screen bg-gray-900 relative overflow-hidden flex items-center pt-20">
+      {/* Background shapes are unchanged */}
       <div className="absolute inset-0">
         <svg className="absolute top-0 left-0 w-full h-full" viewBox="0 0 1200 800" fill="none">
           <path d="M0 400C200 300 400 500 600 400C800 300 1000 500 1200 400V0H0V400Z" fill="url(#gradient1)" opacity="0.1"/>
@@ -22,8 +22,8 @@ const Hero = () => {
         </svg>
       </div>
 
-      {/* 2. ADDED px-4 sm:px-6 to this line */}
-      <div className="max-w-7xl mx-auto py-12 sm:py-20 lg:py-24 relative z-10 px-4 sm:px-6">
+      {/* This container now perfectly matches the one in your Header and other sections */}
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 relative z-10 w-full">
         <div className="grid lg:grid-cols-2 gap-8 lg:gap-16 items-center">
           {/* Left Content */}
           <div className="space-y-8 lg:pr-8">
