@@ -21,8 +21,8 @@ const Hero = () => {
         </svg>
       </div>
 
-      <div className="max-w-7xl mx-auto py-16 sm:py-24 lg:py-32 relative z-10">
-        {/* The fix is removing the 'order-*' classes below */}
+      {/* THIS IS THE LINE WITH THE FIX */}
+      <div className="max-w-7xl mx-auto py-12 sm:py-20 lg:py-24 relative z-10">
         <div className="grid lg:grid-cols-2 gap-8 lg:gap-16 items-center">
           {/* Left Content */}
           <div className="space-y-8 lg:pr-8">
