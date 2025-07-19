@@ -1,28 +1,34 @@
 import React, { useState } from 'react';
 
-// In src/components/Contact.tsx
+const Contact = () => {
+  const [formData, setFormData] = useState({
+    name: '',
+    email: '',
+    message: ''
+  });
+  const [isSubmitted, setIsSubmitted] = useState(false);
 
-const handleSubmit = (e: React.FormEvent) => {
-  e.preventDefault();
-
-  const myForm = e.target as HTMLFormElement;
-  const formData = new FormData(myForm);
-
-  fetch("/", {
-    method: "POST",
-    headers: { "Content-Type": "application/x-www-form-urlencoded" },
-    body: new URLSearchParams(formData as any).toString(),
-  })
-    .then(() => {
-        setIsSubmitted(true);
-        // Reset form after 3 seconds
-        setTimeout(() => {
-          setIsSubmitted(false);
-          setFormData({ name: '', email: '', message: '' });
-        }, 3000);
+  const handleSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+  
+    const myForm = e.target as HTMLFormElement;
+    const formData = new FormData(myForm);
+  
+    fetch("/", {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: new URLSearchParams(formData as any).toString(),
     })
-    .catch((error) => alert(error));
-};
+      .then(() => {
+          setIsSubmitted(true);
+          // Reset form after 3 seconds
+          setTimeout(() => {
+            setIsSubmitted(false);
+            setFormData({ name: '', email: '', message: '' });
+          }, 3000);
+      })
+      .catch((error) => alert(error));
+  };
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     setFormData({
@@ -109,26 +115,13 @@ const handleSubmit = (e: React.FormEvent) => {
               </div>
             ) : (
             <form
-  name="contact" // The name of the form
-  method="POST"
-  data-netlify="true"
-  onSubmit={handleSubmit}
-  className="space-y-6"
->
-  {/* THIS IS THE NEW PART YOU NEED TO ADD */}
-  <input type="hidden" name="form-name" value="contact" />
-
-  <div>
-    <label htmlFor="name" className="block text-sm font-medium text-gray-300 mb-2">
-      What's your name?
-    </label>
-    <input
-      type="text"
-      id="name"
-      name="name" // This name attribute is correct
-      //...
-    />
-  </div>
+                name="contact"
+                method="POST"
+                data-netlify="true"
+                onSubmit={handleSubmit}
+                className="space-y-6"
+            >
+              <input type="hidden" name="form-name" value="contact" />
               <div>
                 <label htmlFor="name" className="block text-sm font-medium text-gray-300 mb-2">
                   What's your name?
