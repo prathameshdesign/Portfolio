@@ -1,4 +1,4 @@
-
+import ProfilePhoto from '../assets/Profile_Photo_Hero_Section.jpeg';
 
 const Hero = () => {
   return (
@@ -82,7 +82,7 @@ const Hero = () => {
                 </svg>
                 <div className="absolute inset-6 sm:inset-8 lg:inset-10 rounded-full overflow-hidden hover:scale-105 transition-transform duration-300">
                   <img 
-                    src="src/assets/Profile_Photo_Hero_Section.jpeg" 
+                    src={ProfilePhoto} 
                     alt="Prathamesh" 
                     className="w-full h-full object-cover"
                     style={{ objectPosition: 'center 50%' }}
