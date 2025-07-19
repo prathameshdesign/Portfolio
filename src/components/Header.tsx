@@ -27,6 +27,14 @@ const Header = () => {
 
           {/* Mobile hamburger menu and Contact button */}
           <div className="flex items-center space-x-3">
+            {/* Contact button - visible on all screens */}
+            <a 
+              href="#contact-form" 
+              className="bg-teal-400 hover:bg-teal-300 text-gray-900 px-4 py-2 rounded-lg font-semibold transition-colors text-sm"
+            >
+              Contact
+            </a>
+            
             {/* Mobile hamburger menu */}
             <div className="lg:hidden">
               <button
@@ -39,69 +47,81 @@ const Header = () => {
                 </svg>
               </button>
             </div>
-            
-            {/* Contact button - visible on all screens */}
-            <a 
-              href="#contact-form" 
-              className="bg-teal-400 hover:bg-teal-300 text-gray-900 px-4 py-2 rounded-lg font-semibold transition-colors text-sm"
-            >
-              Contact
-            </a>
           </div>
         </nav>
 
-        {/* Mobile side menu */}
+        {/* Mobile full-screen menu */}
         {isMobileMenuOpen && (
-          <div className="lg:hidden fixed inset-0 z-[9999]">
-            {/* Full-screen overlay background */}
+          <div className="lg:hidden">
+            {/* Full-screen overlay */}
             <div 
-              className="fixed inset-0 bg-gray-900/95 backdrop-blur-sm"
+              className="fixed inset-0 bg-gray-900 z-[9999] flex flex-col"
               onClick={() => setIsMobileMenuOpen(false)}
-            ></div>
-            
-            {/* Menu content */}
-            <div className="fixed inset-0 flex flex-col items-center justify-center z-[10000] p-8">
-              {/* Close button */}
-              <button
-                onClick={() => setIsMobileMenuOpen(false)}
-                className="absolute top-8 right-8 text-gray-400 hover:text-white transition-colors p-2"
-              >
-                <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
-                </svg>
-              </button>
+            >
+              {/* Header area with close button */}
+              <div className="flex justify-between items-center p-6 border-b border-gray-800">
+                <div className="flex items-center space-x-3">
+                  <div className="w-8 h-8 bg-teal-400 rounded-lg flex items-center justify-center">
+                    <span className="text-gray-900 font-bold text-sm">P</span>
+                  </div>
+                  <span className="text-white font-semibold text-lg">Menu</span>
+                </div>
+                <button
+                  onClick={(e) => {
+                    e.stopPropagation();
+                    setIsMobileMenuOpen(false);
+                  }}
+                  className="text-gray-400 hover:text-white transition-colors p-2"
+                >
+                  <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+                  </svg>
+                </button>
+              </div>
               
               {/* Navigation links */}
-              <nav className="space-y-12 text-center">
-                <a 
-                  href="#home" 
-                  className="block text-white hover:text-teal-400 transition-colors text-3xl font-light tracking-wide"
-                  onClick={() => setIsMobileMenuOpen(false)}
-                >
-                  Home
-                </a>
-                <a 
-                  href="#about" 
-                  className="block text-white hover:text-teal-400 transition-colors text-3xl font-light tracking-wide"
-                  onClick={() => setIsMobileMenuOpen(false)}
-                >
-                  About
-                </a>
-                <a 
-                  href="#projects" 
-                  className="block text-white hover:text-teal-400 transition-colors text-3xl font-light tracking-wide"
-                  onClick={() => setIsMobileMenuOpen(false)}
-                >
-                  Work
-                </a>
-                <a 
-                  href="#faq" 
-                  className="block text-white hover:text-teal-400 transition-colors text-3xl font-light tracking-wide"
-                  onClick={() => setIsMobileMenuOpen(false)}
-                >
-                  FAQ
-                </a>
-              </nav>
+              <div 
+                className="flex-1 flex flex-col justify-center px-6"
+                onClick={(e) => e.stopPropagation()}
+              >
+                <nav className="space-y-8">
+                  <a 
+                    href="#home" 
+                    className="block text-white hover:text-teal-400 transition-colors text-2xl font-medium py-3 border-b border-gray-800"
+                    onClick={() => setIsMobileMenuOpen(false)}
+                  >
+                    Home
+                  </a>
+                  <a 
+                    href="#about" 
+                    className="block text-white hover:text-teal-400 transition-colors text-2xl font-medium py-3 border-b border-gray-800"
+                    onClick={() => setIsMobileMenuOpen(false)}
+                  >
+                    About
+                  </a>
+                  <a 
+                    href="#projects" 
+                    className="block text-white hover:text-teal-400 transition-colors text-2xl font-medium py-3 border-b border-gray-800"
+                    onClick={() => setIsMobileMenuOpen(false)}
+                  >
+                    Work
+                  </a>
+                  <a 
+                    href="#services" 
+                    className="block text-white hover:text-teal-400 transition-colors text-2xl font-medium py-3 border-b border-gray-800"
+                    onClick={() => setIsMobileMenuOpen(false)}
+                  >
+                    Services
+                  </a>
+                  <a 
+                    href="#contact-form" 
+                    className="block bg-teal-400 text-gray-900 hover:bg-teal-300 transition-colors text-xl font-semibold py-4 px-6 rounded-lg text-center mt-8"
+                    onClick={() => setIsMobileMenuOpen(false)}
+                  >
+                    Get In Touch
+                  </a>
+                </nav>
+              </div>
             </div>
           </div>
         )}
