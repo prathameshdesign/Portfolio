@@ -104,7 +104,13 @@ const Contact = () => {
                 <p className="text-gray-400">Your message has been sent successfully.</p>
               </div>
             ) : (
-            <form onSubmit={handleSubmit} className="space-y-6">
+            <form
+  name="contact" // It's good practice to add a name
+  method="POST"  // You can also specify the method
+  data-netlify="true"
+  onSubmit={handleSubmit}
+  className="space-y-6"
+>
               <div>
                 <label htmlFor="name" className="block text-sm font-medium text-gray-300 mb-2">
                   What's your name?
