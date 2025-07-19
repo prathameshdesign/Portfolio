@@ -1,0 +1,4 @@
+[build]
+  base = "prathameshdesign/portfolio/Portfolio-9778f778ff48a39e51046f19300640582f0f7ada"
+  publish = "dist"
+  command = "npm run build"
