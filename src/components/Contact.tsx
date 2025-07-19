@@ -105,12 +105,14 @@ const Contact = () => {
               </div>
             ) : (
             <form
-  name="contact" // It's good practice to add a name
-  method="POST"  // You can also specify the method
+  name="contact" // The name of the form
+  method="POST"
   data-netlify="true"
   onSubmit={handleSubmit}
   className="space-y-6"
-                <input type="hidden" name="form-name" value="contact" />
+>
+  {/* THIS IS THE NEW PART YOU NEED TO ADD */}
+  <input type="hidden" name="form-name" value="contact" />
 
   <div>
     <label htmlFor="name" className="block text-sm font-medium text-gray-300 mb-2">
@@ -123,7 +125,6 @@ const Contact = () => {
       //...
     />
   </div>
->
               <div>
                 <label htmlFor="name" className="block text-sm font-medium text-gray-300 mb-2">
                   What's your name?
