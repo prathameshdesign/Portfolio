@@ -112,7 +112,13 @@ const Header = () => {
                     onClick={() => setIsMobileMenuOpen(false)}
                   >
                     Services
-                  </a
+                  </a>
+                  <a 
+                    href="#contact-form" 
+                    className="block bg-teal-400 text-gray-900 hover:bg-teal-300 transition-colors text-xl font-semibold py-4 px-6 rounded-lg text-center mt-8"
+                    onClick={() => setIsMobileMenuOpen(false)}
+                  >
+                  </a>
                 </nav>
               </div>
             </div>
