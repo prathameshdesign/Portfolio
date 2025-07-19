@@ -21,12 +21,11 @@ const Hero = () => {
       </div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 relative z-10 w-full">
-        {/* FIX #1: Increased the gap between columns for more space */}
-        <div className="grid lg:grid-cols-2 gap-8 lg:gap-35 items-center">
+        {/* I've increased the gap to a much larger value: lg:gap-48 */}
+        <div className="grid lg:grid-cols-2 gap-8 lg:gap-48 items-center">
           {/* Left Content */}
           <div className="space-y-8">
             <div className="space-y-4">
-              {/* FIX #2: Added 'whitespace-nowrap' to keep the heading on one line */}
               <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white leading-tight whitespace-nowrap">
                 Hi, I'm Prathamesh
               </h1>
