@@ -3,7 +3,6 @@ import ProfilePhoto from '../assets/Profile_Photo_Hero_Section.jpeg';
 const Hero = () => {
   return (
     <section id="home" className="min-h-screen bg-gray-900 relative overflow-hidden flex items-center pt-20">
-      {/* Background shapes are unchanged */}
       <div className="absolute inset-0">
         <svg className="absolute top-0 left-0 w-full h-full" viewBox="0 0 1200 800" fill="none">
           <path d="M0 400C200 300 400 500 600 400C800 300 1000 500 1200 400V0H0V400Z" fill="url(#gradient1)" opacity="0.1"/>
@@ -22,12 +21,13 @@ const Hero = () => {
       </div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 relative z-10 w-full">
-        {/* THIS IS THE LINE WITH THE FIX */}
-        <div className="grid lg:grid-cols-2 gap-8 lg:gap-24 items-center">
+        {/* FIX #1: Increased the gap between columns for more space */}
+        <div className="grid lg:grid-cols-2 gap-8 lg:gap-32 items-center">
           {/* Left Content */}
-          <div className="space-y-8 lg:pr-8">
+          <div className="space-y-8">
             <div className="space-y-4">
-              <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white leading-tight">
+              {/* FIX #2: Added 'whitespace-nowrap' to keep the heading on one line */}
+              <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white leading-tight whitespace-nowrap">
                 Hi, I'm Prathamesh
               </h1>
               <p className="text-lg sm:text-xl text-teal-400 font-medium">
@@ -66,7 +66,6 @@ const Hero = () => {
           {/* Right Content - Profile Image */}
           <div className="flex justify-center lg:justify-center items-center">
             <div className="relative">
-              {/* Hexagonal background */}
               <div className="w-72 sm:w-80 lg:w-96 h-72 sm:h-80 lg:h-96 relative">
                 <svg className="absolute inset-0 w-full h-full" viewBox="0 0 200 200">
                   <polygon
