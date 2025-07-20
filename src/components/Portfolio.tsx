@@ -10,6 +10,7 @@ const Portfolio = () => {
       image: LaunchwiseDashboard,
       tags: ["Platform", "SaaS"],
       liveSiteUrl: "https://launchwise.netlify.app/" // Added this line
+      caseStudyUrl: "#" 
     },
     {
       title: "BugRadar",
@@ -18,6 +19,7 @@ const Portfolio = () => {
       image: BugRadarDashboard,
       tags: ["Tool", "Developer"],
       liveSiteUrl: "https://bugradardesign.netlify.app/" // Added this line
+      caseStudyUrl: "#" 
     }
   ];
 
