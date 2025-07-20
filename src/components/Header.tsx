@@ -54,7 +54,7 @@ const Header = () => {
           {/* Right Group */}
           <div className="flex items-center">
             <a
-              href="#contact-form"
+              href="#contact"
               className="bg-teal-400 hover:bg-teal-300 text-gray-900 px-4 py-2 rounded-lg font-semibold transition-colors text-sm"
             >
               Contact
