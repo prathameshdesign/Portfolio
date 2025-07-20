@@ -59,7 +59,7 @@ const Footer = () => {
 
         <div className="border-t border-gray-800 pt-8">
           <p className="text-gray-500 text-xs text-center break-words">
-            © 2025 Prathamesh Design • Designed & built by me. <a href="#contact-form" className="text-teal-400 hover:text-teal-300 transition-colors">Hire me</a>
+            © 2025 Prathamesh Design • Designed & built by me. <a href="#contact" className="text-teal-400 hover:text-teal-300 transition-colors">Hire me</a>
           </p>
         </div>
       </div>
