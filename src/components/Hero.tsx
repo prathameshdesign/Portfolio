@@ -27,6 +27,7 @@ const Hero = () => {
           {/* FIX #2: Increased vertical spacing for mobile ONLY, which is reset on desktop (lg:space-y-8) */}
           <div className="space-y-12 lg:space-y-8">
             <div className="space-y-4">
+              {/* This is your original h1 from the code you provided, with the desktop-only whitespace-nowrap */}
               <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white leading-tight lg:whitespace-nowrap">
                 Hi, I'm Prathamesh
               </h1>
@@ -63,7 +64,7 @@ const Hero = () => {
             </div>
           </div>
 
-          {/* Right Content - Profile Image */}
+          {/* This is your original, correct code for the image */}
           <div className="flex justify-center lg:justify-end items-center">
             <div className="relative lg:bottom-8 lg:left-12">
               <div className="relative">
