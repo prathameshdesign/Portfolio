@@ -27,7 +27,7 @@ const Hero = () => {
           {/* FIX #2: Increased vertical spacing for mobile ONLY, which is reset on desktop (lg:space-y-8) */}
           <div className="space-y-12 lg:space-y-8">
             <div className="space-y-4">
-              <h1 className="text-4xl sm:text-3xl lg:text-6xl font-bold text-white leading-tight lg:whitespace-nowrap">
+              <h1 className="text-2xl sm:text-3xl lg:text-6xl font-bold text-white leading-tight lg:whitespace-nowrap">
                 Hi, I'm Prathamesh
               </h1>
               <p className="text-sm sm:text-base lg:text-xl text-teal-400 font-medium">
