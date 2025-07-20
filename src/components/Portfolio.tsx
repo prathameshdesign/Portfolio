@@ -8,14 +8,16 @@ const Portfolio = () => {
       subtitle: "Investor Updates Made Simple",
       description: "Designed a clean platform for startups to share investor updates. Focused on credibility, easy reading, and a layout that guides people to the right info.",
       image: LaunchwiseDashboard,
-      tags: ["Platform", "SaaS"]
+      tags: ["Platform", "SaaS"],
+      liveSiteUrl: "https://launchwise.netlify.app/" // Added this line
     },
     {
       title: "BugRadar",
       subtitle: "Bug Reports That Actually Make Sense",
       description: "Built a dev-focused bug reporting tool that's clear, tidy, and on-brand. Helps teams track issues without the usual clutter.",
       image: BugRadarDashboard,
-      tags: ["Tool", "Developer"]
+      tags: ["Tool", "Developer"],
+      liveSiteUrl: "https://bugradardesign.netlify.app/" // Added this line
     }
   ];
 
@@ -64,8 +66,11 @@ const Portfolio = () => {
                     {project.description}
                   </p>
                   <div className="flex flex-col sm:flex-row gap-3 mt-4">
+                    {/* --- THIS IS THE CHANGED LINK --- */}
                     <a 
-                      href="#" 
+                      href={project.liveSiteUrl}
+                      target="_blank" 
+                      rel="noopener noreferrer"
                       className="bg-teal-400 hover:bg-teal-300 text-gray-900 px-4 py-2 rounded-lg text-sm font-medium transition-colors"
                     >
                       Visit Live Site
@@ -85,7 +90,7 @@ const Portfolio = () => {
 
         <div className="mt-16 text-center">
           <a 
-            href="#contact" 
+            href="#contact-form" 
             className="text-gray-300 hover:text-teal-400 transition-colors text-lg"
           >
             Want to see more? Let's Talk.
