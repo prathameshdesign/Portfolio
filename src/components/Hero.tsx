@@ -28,7 +28,7 @@ const Hero = () => {
           <div className="space-y-12 lg:space-y-8">
             <div className="space-y-4">
               {/* This is your original h1 from the code you provided, with the desktop-only whitespace-nowrap */}
-              <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white leading-tight lg:whitespace-nowrap">
+              <h1 className="text-3xl sm:text-5xl lg:text-6xl font-bold text-white leading-tight lg:whitespace-nowrap">
                 Hi, I'm Prathamesh
               </h1>
               <p className="text-lg sm:text-xl text-teal-400 font-medium">
