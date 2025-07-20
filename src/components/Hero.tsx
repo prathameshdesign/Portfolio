@@ -44,7 +44,7 @@ const Hero = () => {
                 <span>See My Work</span>
                 <span className="opacity-0 group-hover:opacity-100 transform translate-x-0 group-hover:translate-x-1 transition-all duration-300">→</span>
               </a>
-              <a href="#contact-form" className="group border border-teal-400 text-teal-400 hover:bg-teal-400 hover:text-gray-900 px-6 sm:px-8 py-3 rounded-lg font-semibold transition-all duration-300 inline-flex items-center justify-center gap-2">
+              <a href="#contact" className="group border border-teal-400 text-teal-400 hover:bg-teal-400 hover:text-gray-900 px-6 sm:px-8 py-3 rounded-lg font-semibold transition-all duration-300 inline-flex items-center justify-center gap-2">
                 <span>Let's Talk</span>
                 <span className="opacity-0 group-hover:opacity-100 transform translate-x-0 group-hover:translate-x-1 transition-all duration-300">→</span>
               </a>
