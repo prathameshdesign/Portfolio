@@ -52,7 +52,6 @@ html {
   scroll-margin-top: 10px;
 }
 
-
 /* --- Tablet & Mobile Scroll Control --- */
 @media (max-width: 1023px) {
   #home {
@@ -71,8 +70,6 @@ html {
     scroll-margin-top: 0px;
   }
 }
-/* --- END OF SCROLLING CODE --- */
-
 
 /* Fix for any potential overflow issues */
 .container, section, div {
