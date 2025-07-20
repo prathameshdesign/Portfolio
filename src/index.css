@@ -120,15 +120,15 @@ section:target {
   }
   
   #about {
-    scroll-margin-top: -25px;
+    scroll-margin-top: -90px;
   }
   
   #projects {
-    scroll-margin-top: -25px;
+    scroll-margin-top: -90px;
   }
   
   #services {
-    scroll-margin-top: -25px;
+    scroll-margin-top: -90px;
   }
 }
 
