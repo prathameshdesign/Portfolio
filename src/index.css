@@ -25,16 +25,31 @@ body {
   max-width: 100vw;
 }
 
-/* --- THIS IS THE ONLY SCROLLING CODE YOU NEED --- */
-/* Smooth scroll with offset for fixed header */
+/* --- THIS IS THE SCROLLING CODE YOU CAN CONTROL --- */
 html {
   scroll-behavior: smooth;
-  scroll-padding-top: 100px; /* Default for DESKTOP */
 }
 
+/* Use scroll-margin-top on each section to control its final position.
+  - A LARGER value (e.g., 120px) will push the section further DOWN.
+  - A SMALLER value (e.g., 80px) will leave it further UP.
+*/
+
+/* --- Desktop Scroll Control --- */
+#about,
+#projects,
+#services,
+#contact {
+  scroll-margin-top: 100px; /* Adjust this value for all sections on desktop */
+}
+
+/* --- Tablet & Mobile Scroll Control --- */
 @media (max-width: 1023px) {
-  html {
-    scroll-padding-top: 85px; /* Tweak this for TABLET & MOBILE */
+  #about,
+  #projects,
+  #services,
+  #contact {
+    scroll-margin-top: 85px; /* Adjust this for all sections on smaller screens */
   }
 }
 /* --- END OF SCROLLING CODE --- */
@@ -177,4 +192,4 @@ textarea:focus {
   .flex {
     flex-wrap: wrap;
   }
-} 
+}
