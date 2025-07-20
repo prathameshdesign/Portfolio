@@ -133,7 +133,7 @@ section:target {
   
   /* Additional desktop-only scroll adjustments */
   #about {
-    scroll-margin-top: 0px;
+    scroll-margin-top: -120px;
   }
   
   #projects {
