@@ -55,7 +55,7 @@ body {
 
 /* Smooth scroll with offset for fixed header */
 html {
-  scroll-padding-top: 20px; /* Default for DESKTOP */
+  scroll-padding-top: 50px; /* Default for DESKTOP */
 }
 
 @media (max-width: 768px) {
