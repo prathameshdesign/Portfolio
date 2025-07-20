@@ -36,23 +36,43 @@ html {
 */
 
 /* --- Desktop Scroll Control --- */
-#about,
-#projects,
-#services,
-#contact {
-  scroll-margin-top: 70px; /* Adjust this value for all sections on desktop */
+#home {
+  scroll-margin-top: 100px; 
 }
+#about {
+  scroll-margin-top: 100px;
+}
+#projects {
+  scroll-margin-top: 100px;
+}
+#services {
+  scroll-margin-top: 100px;
+}
+#contact {
+  scroll-margin-top: 100px;
+}
+
 
 /* --- Tablet & Mobile Scroll Control --- */
 @media (max-width: 1023px) {
-  #about,
-  #projects,
-  #services,
+  #home {
+    scroll-margin-top: 85px; 
+  }
+  #about {
+    scroll-margin-top: 85px;
+  }
+  #projects {
+    scroll-margin-top: 85px;
+  }
+  #services {
+    scroll-margin-top: 85px;
+  }
   #contact {
-    scroll-margin-top: 85px; /* Adjust this for all sections on smaller screens */
+    scroll-margin-top: 85px;
   }
 }
 /* --- END OF SCROLLING CODE --- */
+
 
 /* Fix for any potential overflow issues */
 .container, section, div {
