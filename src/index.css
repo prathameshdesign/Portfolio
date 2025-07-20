@@ -61,7 +61,7 @@ html {
 
 @media (max-width: 1023px) {
   html {
-    scroll-padding-top: 85px; /* Tweak this for TABLET & MOBILE */
+    scroll-padding-top: 20px; /* Tweak this for TABLET & MOBILE */
   }
 }
 /* --- END OF CHANGED SECTION --- */
