@@ -30,7 +30,7 @@ const Hero = () => {
               <h1 className="text-3xl sm:text-3xl lg:text-6xl font-bold text-white leading-tight lg:whitespace-nowrap">
                 Hi, I'm Prathamesh
               </h1>
-              <p className="text-base sm:text-base lg:text-xl text-teal-400 font-medium">
+              <p className="text-sm sm:text-base lg:text-xl text-teal-400 font-medium">
                 I design conversion-focused websites that help startups look trustworthy and sell more.
               </p>
               <p className="text-gray-300 text-xs sm:text-sm leading-relaxed">
