@@ -25,7 +25,7 @@ const Hero = () => {
         <div className="grid lg:grid-cols-2 gap-8 lg:gap-32 items-center mt-16 lg:mt-0">
           {/* Left Content */}
           {/* FIX #2: Increased vertical spacing for mobile ONLY, which is reset on desktop (lg:space-y-8) */}
-          <div className="space-y-6 lg:space-y-8">
+          <div className="space-y-12 lg:space-y-8">
             <div className="space-y-4">
               <h1 className="text-2xl sm:text-3xl lg:text-6xl font-bold text-white leading-tight lg:whitespace-nowrap">
                 Hi, I'm Prathamesh
