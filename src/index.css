@@ -29,7 +29,7 @@ body {
 /* Smooth scroll with offset for fixed header */
 html {
   scroll-behavior: smooth;
-  scroll-padding-top: 100px; /* Default for DESKTOP */
+  scroll-padding-top: 85px; /* Default for DESKTOP */
 }
 
 @media (max-width: 1023px) {
