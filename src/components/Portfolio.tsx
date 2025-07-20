@@ -9,7 +9,7 @@ const Portfolio = () => {
       description: "Designed a clean platform for startups to share investor updates. Focused on credibility, easy reading, and a layout that guides people to the right info.",
       image: LaunchwiseDashboard,
       tags: ["Platform", "SaaS"],
-      liveSiteUrl: "https://launchwise.netlify.app/" // Added this line
+      liveSiteUrl: "https://launchwise.netlify.app/", // Added this line
       caseStudyUrl: "#" 
     },
     {
@@ -18,7 +18,7 @@ const Portfolio = () => {
       description: "Built a dev-focused bug reporting tool that's clear, tidy, and on-brand. Helps teams track issues without the usual clutter.",
       image: BugRadarDashboard,
       tags: ["Tool", "Developer"],
-      liveSiteUrl: "https://bugradardesign.netlify.app/" 
+      liveSiteUrl: "https://bugradardesign.netlify.app/" ,
       caseStudyUrl: "#"
     }
   ];
