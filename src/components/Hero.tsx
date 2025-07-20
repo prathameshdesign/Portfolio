@@ -22,7 +22,7 @@ const Hero = () => {
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 relative z-10 w-full">
         {/* FIX #1: Added top margin for mobile ONLY, which is removed on desktop (lg:mt-0) */}
-        <div className="grid lg:grid-cols-2 gap-8 lg:gap-32 items-center mt-16 lg:mt-0">
+        <div className="grid lg:grid-cols-2 gap-8 lg:gap-32 items-center mt-8 lg:mt-0">
           {/* Left Content */}
           {/* FIX #2: Increased vertical spacing for mobile ONLY, which is reset on desktop (lg:space-y-8) */}
           <div className="space-y-12 lg:space-y-8">
