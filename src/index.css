@@ -40,7 +40,7 @@ html {
 #projects,
 #services,
 #contact {
-  scroll-margin-top: 50px; /* Adjust this value for all sections on desktop */
+  scroll-margin-top: 55px; /* Adjust this value for all sections on desktop */
 }
 
 /* --- Tablet & Mobile Scroll Control --- */
