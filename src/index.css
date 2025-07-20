@@ -53,45 +53,18 @@ body {
   background: #0d9488;
 }
 
+/* --- THIS IS THE ONLY CHANGED SECTION --- */
 /* Smooth scroll with offset for fixed header */
 html {
-  scroll-padding-top: 100px;
+  scroll-padding-top: 100px; /* Default for DESKTOP */
 }
 
-/* Section-specific scroll adjustments */
-#about, #projects, #services {
-  scroll-margin-top: 20px;
-}
-
-#contact-form {
-  scroll-margin-top: 20px;
-}
-
-/* Mobile-specific scroll adjustments */
 @media (max-width: 768px) {
   html {
-    scroll-padding-top: 90px;
-  }
-  
-  #about, #projects, #services {
-    scroll-margin-top: 10px;
-  }
-  
-  #contact-form {
-    scroll-margin-top: 10px;
+    scroll-padding-top: 85px; /* Tweak this for MOBILE */
   }
 }
-
-/* Tablet-specific scroll adjustments */
-@media (min-width: 769px) and (max-width: 1023px) {
-  html {
-    scroll-padding-top: 95px;
-  }
-  
-  #about, #projects, #services, #contact-form {
-    scroll-margin-top: 15px;
-  }
-}
+/* --- END OF CHANGED SECTION --- */
 
 /* Smooth animations */
 * {
