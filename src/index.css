@@ -135,7 +135,7 @@ section:target {
 /* Desktop-specific scroll adjustments (1024px and above) */
 @media (min-width: 1024px) {
   html {
-    scroll-padding-top: 120px;
+    scroll-padding-top: 140px;
   }
   
   #contact-form {
