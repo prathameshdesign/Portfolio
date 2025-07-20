@@ -18,8 +18,8 @@ const Portfolio = () => {
       description: "Built a dev-focused bug reporting tool that's clear, tidy, and on-brand. Helps teams track issues without the usual clutter.",
       image: BugRadarDashboard,
       tags: ["Tool", "Developer"],
-      liveSiteUrl: "https://bugradardesign.netlify.app/" // Added this line
-      caseStudyUrl: "#" 
+      liveSiteUrl: "https://bugradardesign.netlify.app/" 
+      caseStudyUrl: "#"
     }
   ];
 
