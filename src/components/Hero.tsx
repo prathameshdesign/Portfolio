@@ -21,11 +21,13 @@ const Hero = () => {
       </div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 relative z-10 w-full">
-        <div className="grid lg:grid-cols-2 gap-8 lg:gap-32 items-center">
+        {/* FIX #1: Added top margin for mobile ONLY, which is removed on desktop (lg:mt-0) */}
+        <div className="grid lg:grid-cols-2 gap-8 lg:gap-32 items-center mt-16 lg:mt-0">
           {/* Left Content */}
-          <div className="space-y-8">
+          {/* FIX #2: Increased vertical spacing for mobile ONLY, which is reset on desktop (lg:space-y-8) */}
+          <div className="space-y-12 lg:space-y-8">
             <div className="space-y-4">
-              <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white leading-tight whitespace-nowrap">
+              <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white leading-tight lg:whitespace-nowrap">
                 Hi, I'm Prathamesh
               </h1>
               <p className="text-lg sm:text-xl text-teal-400 font-medium">
@@ -63,31 +65,28 @@ const Hero = () => {
 
           {/* Right Content - Profile Image */}
           <div className="flex justify-center lg:justify-end items-center">
-            {/* THIS IS THE WRAPPER DIV WHERE YOU CONTROL THE POSITION */}
-            <div className="relative lg:bottom-8 lg:left-12">
-              <div className="relative">
-                <div className="w-72 sm:w-80 lg:w-96 h-72 sm:h-80 lg:h-96 relative">
-                  <svg className="absolute inset-0 w-full h-full" viewBox="0 0 200 200">
-                    <polygon
-                      points="100,10 170,50 170,130 100,170 30,130 30,50"
-                      fill="url(#heroGradient)"
-                      className="drop-shadow-2xl"
-                    />
-                    <defs>
-                      <linearGradient id="heroGradient" x1="0%" y1="0%" x2="100%" y2="100%">
-                        <stop offset="0%" stopColor="#14B8A6" />
-                        <stop offset="100%" stopColor="#06B6D4" />
-                      </linearGradient>
-                    </defs>
-                  </svg>
-                  <div className="absolute inset-6 sm:inset-8 lg:inset-10 rounded-full overflow-hidden hover:scale-105 transition-transform duration-300">
-                    <img
-                      src={ProfilePhoto}
-                      alt="Prathamesh"
-                      className="w-full h-full object-cover"
-                      style={{ objectPosition: 'center 50%' }}
-                    />
-                  </div>
+            <div className="relative">
+              <div className="w-72 sm:w-80 lg:w-96 h-72 sm:h-80 lg:h-96 relative">
+                <svg className="absolute inset-0 w-full h-full" viewBox="0 0 200 200">
+                  <polygon
+                    points="100,10 170,50 170,130 100,170 30,130 30,50"
+                    fill="url(#heroGradient)"
+                    className="drop-shadow-2xl"
+                  />
+                  <defs>
+                    <linearGradient id="heroGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                      <stop offset="0%" stopColor="#14B8A6" />
+                      <stop offset="100%" stopColor="#06B6D4" />
+                    </linearGradient>
+                  </defs>
+                </svg>
+                <div className="absolute inset-6 sm:inset-8 lg:inset-10 rounded-full overflow-hidden hover:scale-105 transition-transform duration-300">
+                  <img
+                    src={ProfilePhoto}
+                    alt="Prathamesh"
+                    className="w-full h-full object-cover"
+                    style={{ objectPosition: 'center 50%' }}
+                  />
                 </div>
               </div>
             </div>
