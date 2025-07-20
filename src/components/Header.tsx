@@ -44,7 +44,7 @@ const Header = () => {
           {/* Desktop Navigation (Center) */}
           <div className="hidden lg:flex absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2">
             <div className="flex items-center space-x-8">
-              <a href="#home" className="text-teal-400 hover:text-teal-300 transition-colors">Home</a>
+              <a href="#home" className="text-gray-300 hover:text-teal-400 transition-colors">Home</a>
               <a href="#about" className="text-gray-300 hover:text-teal-400 transition-colors">About</a>
               <a href="#projects" className="text-gray-300 hover:text-teal-400 transition-colors">Projects</a>
               <a href="#services" className="text-gray-300 hover:text-teal-400 transition-colors">Services</a>

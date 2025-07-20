@@ -55,28 +55,41 @@ body {
 
 /* Smooth scroll with offset for fixed header */
 html {
-  scroll-padding-top: 120px;
+  scroll-padding-top: 100px;
+}
+
+/* Section-specific scroll adjustments */
+#about, #projects, #services {
+  scroll-margin-top: 20px;
 }
 
 #contact-form {
-  scroll-margin-top: -40px;
+  scroll-margin-top: 20px;
 }
 
-/* Additional mobile-specific scroll adjustment */
+/* Mobile-specific scroll adjustments */
 @media (max-width: 768px) {
   html {
-    scroll-padding-top: 100px;
+    scroll-padding-top: 90px;
+  }
+  
+  #about, #projects, #services {
+    scroll-margin-top: 10px;
   }
   
   #contact-form {
-    scroll-margin-top: -60px;
+    scroll-margin-top: 10px;
   }
 }
 
-/* Tablet-specific adjustments */
-@media (min-width: 769px) and (max-width: 1024px) {
-  #contact-form {
-    scroll-margin-top: 210px;
+/* Tablet-specific scroll adjustments */
+@media (min-width: 769px) and (max-width: 1023px) {
+  html {
+    scroll-padding-top: 95px;
+  }
+  
+  #about, #projects, #services, #contact-form {
+    scroll-margin-top: 15px;
   }
 }
 
