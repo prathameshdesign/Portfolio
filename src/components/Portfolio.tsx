@@ -85,7 +85,7 @@ const Portfolio = () => {
 
         <div className="mt-16 text-center">
           <a 
-            href="#contact-form" 
+            href="#contact" 
             className="text-gray-300 hover:text-teal-400 transition-colors text-lg"
           >
             Want to see more? Let's Talk.
