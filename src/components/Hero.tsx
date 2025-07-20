@@ -22,34 +22,34 @@ const Hero = () => {
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 relative z-10 w-full">
         {/* FIX #1: Added top margin for mobile ONLY, which is removed on desktop (lg:mt-0) */}
-        <div className="grid lg:grid-cols-2 gap-8 lg:gap-32 items-center mt-16 lg:mt-0"> 
+        <div className="grid lg:grid-cols-2 gap-8 lg:gap-32 items-center mt-16 lg:mt-0">
           {/* Left Content */}
           {/* FIX #2: Increased vertical spacing for mobile ONLY, which is reset on desktop (lg:space-y-8) */}
           <div className="space-y-12 lg:space-y-8">
             <div className="space-y-4">
-              <h1 className="text-3xl sm:text-3xl lg:text-6xl font-bold text-white leading-tight lg:whitespace-nowrap">
+              <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white leading-tight lg:whitespace-nowrap">
                 Hi, I'm Prathamesh
               </h1>
-              <p className="text-sm sm:text-base lg:text-xl text-teal-400 font-medium">
+              <p className="text-lg sm:text-xl text-teal-400 font-medium">
                 I design conversion-focused websites that help startups look trustworthy and sell more.
               </p>
-              <p className="text-gray-300 text-xs sm:text-sm leading-relaxed">
+              <p className="text-gray-300 text-sm leading-relaxed">
                 Helping founders present their best digital face
               </p>
             </div>
 
-            <div className="flex flex-col gap-3 sm:gap-4">
-              <a href="#projects" className="group bg-teal-400 hover:bg-teal-300 text-gray-900 px-4 sm:px-6 lg:px-8 py-2.5 sm:py-3 rounded-lg font-semibold transition-all duration-300 inline-flex items-center justify-center gap-2 text-sm sm:text-base">
+            <div className="flex flex-col sm:flex-row gap-4">
+              <a href="#projects" className="group bg-teal-400 hover:bg-teal-300 text-gray-900 px-6 sm:px-8 py-3 rounded-lg font-semibold transition-all duration-300 inline-flex items-center justify-center gap-2">
                 <span>See My Work</span>
                 <span className="opacity-0 group-hover:opacity-100 transform translate-x-0 group-hover:translate-x-1 transition-all duration-300">→</span>
               </a>
-              <a href="#contact-form" className="group border border-teal-400 text-teal-400 hover:bg-teal-400 hover:text-gray-900 px-4 sm:px-6 lg:px-8 py-2.5 sm:py-3 rounded-lg font-semibold transition-all duration-300 inline-flex items-center justify-center gap-2 text-sm sm:text-base">
+              <a href="#contact-form" className="group border border-teal-400 text-teal-400 hover:bg-teal-400 hover:text-gray-900 px-6 sm:px-8 py-3 rounded-lg font-semibold transition-all duration-300 inline-flex items-center justify-center gap-2">
                 <span>Let's Talk</span>
                 <span className="opacity-0 group-hover:opacity-100 transform translate-x-0 group-hover:translate-x-1 transition-all duration-300">→</span>
               </a>
             </div>
 
-            <div className="flex gap-3 mt-4 sm:mt-6">
+            <div className="flex gap-4 mt-6">
               <a href="https://www.linkedin.com/in/prathamesh-sawant-social" className="w-10 h-10 bg-gray-800 hover:bg-teal-400 rounded-lg flex items-center justify-center transition-colors group">
                 <svg className="w-5 h-5 text-gray-400 group-hover:text-gray-900" fill="currentColor" viewBox="0 0 24 24">
                   <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
