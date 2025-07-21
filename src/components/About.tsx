@@ -74,7 +74,7 @@ const About = () => {
                   src={ProfileImage} 
                   alt="Prathamesh working" 
                   className="w-full h-full object-cover object-center"
-                  style={{ objectPosition: '-20% -30%' }}
+                  style={{ objectPosition: ' -30%' }}
                 />
               </div>
             </div>
